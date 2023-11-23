@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="Navbar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/3332c92975.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <nav
+        class="w-full h-[50px] bg-gradient-to-r from-blue-400 to-black flex items-center justify-between gap-4 px-2 fixed top-0"
+      >
+        <!-- left side -->
+
+        <div
+          class="flex p-2 text-white font-bold text-xl shrink-0 sm:text-3xl md:w-[250px]"
+        >
+          <h1>NAVBAR Co.</h1>
+        </div>
+
+        <!-- right side -->
+
+        <div class="flex gap-4 justify-end items-center">
+          <div class="flex p-2 md:w-[400px] z-10">
+            <ul
+              class="menu flex text-white backdrop-blur-md absolute top-[-1100px] left-0 gap-8 flex-col items-center justify-center [25px] h-screen w-screen md:text-white md:justify-between md:flex-row md:bg-transparent md:static md:w-[200px] md:h-[40px] md:pt-0 md:pl-6 md:gap-4"
+            >
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Links</a></li>
+              <li><a href="#">Shops</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <button
+            class="font-semibold text-white bg-blue-400 rounded text-xs h-[20px] w-[50px] hover:bg-blue-500 shrink-0 static md:text-sm md:h-[25px] md:w-[70px]"
+          >
+            Log in
+          </button>
+
+          <div class="nav-links text-white p-2 shrink-0 static md:hidden">
+            <i class="toggle-btn fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+    <section
+      class="flex items-center justify-center absolute top-[50%] bottom-[50%] left-[50%]"
+    >
+      <div
+        class="absolute flex items-center justify-center w-[300px] h-[300px] flex-col bg-gradient-to-l from-slate-800 to-orange-900 rounded gap-2 -z-50 shadow-2xl md:w-[500px] md:flex-row md:gap-6"
+      >
+        <img
+          src="/wallpaperflare.com_wallpaper.jpg"
+          alt="DP"
+          class="w-[150px] h-[150px] rounded-full object-cover ring-4 ring-blue-200 shadow-xl hover:shadow-orange-200 transition-all"
+        />
+
+        <div>
+          <p class="font-bold text-xl text-blue-500">Dominic Pranto Gomes</p>
+
+          <p class="text-white text-sm">Dexter Co.</p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const toggleBtn = document.querySelector(".toggle-btn");
+      const dropdown = document.querySelector(".menu");
+
+      toggleBtn.addEventListener("click", () => {
+        dropdown.classList.toggle("top-[50px]");
+      });
+
+      // const navLinks = document.querySelector('.nav-links')
+
+      // function onToggleMenu(e){
+
+      //     navLinks.classList.toggle('top-[50px]')
+      // }
+
+      
+    </script>
+  </body>
+</html>

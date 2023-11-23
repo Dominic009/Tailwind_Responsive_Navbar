@@ -1,0 +1,10 @@
+body{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(34, 34, 34);
+}
+
+ul li:hover{
+    /* color: rgb(108, 179, 238); */
+    border-bottom: 1px solid  rgb(201, 61, 14) ;
+}
